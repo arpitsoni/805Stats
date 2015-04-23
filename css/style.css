@@ -50,8 +50,8 @@ a, a:hover, a:focus {
 }
 
 .form-signin {
-    max-width: 330px;
-    margin: 100px auto 0;
+    max-width: 630px;
+    margin: 45px auto 0;
     background: #fff;
     border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -61,7 +61,7 @@ a, a:hover, a:focus {
     margin: 0;
     padding:20px 15px;
     text-align: center;
-    background: #41cac0;
+    background: #3DBBB2;
     border-radius: 5px 5px 0 0;
     -webkit-border-radius: 5px 5px 0 0;
     color: #fff;
@@ -76,7 +76,7 @@ a, a:hover, a:focus {
 }
 .form-signin .checkbox {
     font-weight: normal;
-    color: #b6b6b6;
+    color: #888686;
     font-weight: 300;
     font-family: 'Open Sans', sans-serif;
 }
@@ -5881,4 +5881,20 @@ a.guest-on i {
 .m-thumb img {
     width: 100%;
     border:1px solid #ddd;
+}
+
+/*Custom CSS*/
+
+.body-bg-image{
+
+    background:url("../img/bg.png");
+
+    background-attachment:fixed;
+
+    background-size:100% 100%;
+
+    background-repeat:no-repeat;
+
+    background-position:center center;
+
 }
