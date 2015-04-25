@@ -5898,3 +5898,26 @@ a.guest-on i {
     background-position:center center;
 
 }
+
+/*************Font colors and Background colors**************/
+.font-white{
+    color:#fff;
+}
+
+.font-black{
+    color:#000;
+}
+
+.red-bg{
+    background-color:#F77B6F;
+}
+
+.blue-bg{
+    background-color: rgb(107, 135, 171);
+}
+
+/**************Custom Margins and Paddings******************/
+.margin-left-5{
+    margin-left: 5px;
+}
+

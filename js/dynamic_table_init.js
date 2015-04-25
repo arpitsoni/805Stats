@@ -2,9 +2,10 @@ function fnFormatDetails ( oTable, nTr )
 {
     var aData = oTable.fnGetData( nTr );
     var sOut = '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">';
-    sOut += '<tr><td>Rendering engine:</td><td>'+aData[1]+' '+aData[4]+'</td></tr>';
-    sOut += '<tr><td>Link to source:</td><td>Could provide a link here</td></tr>';
-    sOut += '<tr><td>Extra info:</td><td>And any further details here (img etc)</td></tr>';
+    // sOut += '<tr><td>Rendering engine:</td><td>'+aData[1]+' '+aData[4]+'</td></tr>';
+    
+    sOut += '<tr><td>Quick Actions:</td><td><button class="btn btn-primary">Manage Facility</button><button class="btn btn-primary margin-left-5">Manage Divisions</button><button class="btn btn-primary margin-left-5">Manage Games</button><button class="btn btn-primary margin-left-5">Manage Schedules</button><button class="btn btn-primary margin-left-5">Manage Teams</button><button class="btn btn-warning margin-left-5">Edit Tournament</button><button class="btn btn-danger margin-left-5">Delete Tournament</button></td></tr>';
+    sOut += '<tr><td>Tournament Specific Information:</td><td>And any further details here</td></tr>';
     sOut += '</table>';
 
     return sOut;
@@ -21,9 +22,10 @@ $(document).ready(function() {
      */
     var nCloneTh = document.createElement( 'th' );
     var nCloneTd = document.createElement( 'td' );
+    nCloneTh.innerHTML = 'Action';
     nCloneTd.innerHTML = '<img src="img/details_open.png">';
     nCloneTd.className = "center";
-
+    
     $('#hidden-table-info thead tr').each( function () {
         this.insertBefore( nCloneTh, this.childNodes[0] );
     } );
@@ -37,7 +39,7 @@ $(document).ready(function() {
      */
     var oTable = $('#hidden-table-info').dataTable( {
         "aoColumnDefs": [
-            { "bSortable": false, "aTargets": [ 0 ] }
+            { "bSortable": false, "aTargets": [ 1 ] }
         ],
         "aaSorting": [[1, 'asc']]
     });
@@ -46,7 +48,7 @@ $(document).ready(function() {
      * Note that the indicator for showing which row is open is not controlled by DataTables,
      * rather it is done here
      */
-    $(document).on('click','#hidden-table-info tbody td img',function () {
+    $(document).on('click','#hidden-table-info tbody td:first-child img',function () {
         var nTr = $(this).parents('tr')[0];
         if ( oTable.fnIsOpen(nTr) )
         {
