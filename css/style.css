@@ -5908,6 +5908,20 @@ a.guest-on i {
     color:#000;
 }
 
+.font-green{
+    color:green;
+}
+
+.font-blue{
+    color:blue;
+}
+.font-red{
+    color:red;
+}
+
+.font-violet{
+    color:violet;
+}
 .red-bg{
     background-color:#F77B6F;
 }
@@ -5916,8 +5930,27 @@ a.guest-on i {
     background-color: rgb(107, 135, 171);
 }
 
+.orange-bg{
+    background-color: orange;
+}
+
+.violet-bg{
+    background-color: violet;
+}
+
+/**********************Font Sizes***************************/
+.font-40{
+    font-size: 40px;
+}
+
 /**************Custom Margins and Paddings******************/
 .margin-left-5{
     margin-left: 5px;
+}
+
+/**************Custom Override CSS***************************/
+.tools a.font-white{
+    color: #fff;
+    margin-top: -4px;
 }
 
