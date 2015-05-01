@@ -17,6 +17,10 @@
     <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="assets/bootstrap-wysihtml5/bootstrap-wysihtml5.css" />
     <link rel="stylesheet" type="text/css" href="assets/bootstrap-fileupload/bootstrap-fileupload.css" />
+    <!--dynamic table-->
+    <link href="assets/advanced-datatable/media/css/demo_page.css" rel="stylesheet" />
+    <link href="assets/advanced-datatable/media/css/demo_table.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/data-tables/DT_bootstrap.css" />
     
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
@@ -30,6 +34,24 @@
   </head>
 
   <body class="full-width">
+    <!-- Modal -->
+  <div class="modal fade" id="courtStatusModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <section id="container" class="">
       <!--header start-->
@@ -85,8 +107,205 @@
       <!--main content start-->
       <section id="main-content">
         <section class="wrapper">
-          <!-- Create/Edit Facility Start-->
-          <div class="row">
+        <!--Facility Table-->
+        <div class="row">
+          <div class="col-sm-12">
+            <section class="panel">
+              <header class="panel-heading red-bg font-white text-center">
+                  List of Available Facilities
+             <span class="tools pull-right">
+              <a href="#facilityDiv" class="btn btn-primary font-white">Add Facility</a>
+              <a href="javascript:;" class="fa fa-chevron-down"></a>
+
+             </span>
+              </header>
+              <div class="panel-body">
+              <div class="adv-table">
+              <table  class="display table table-bordered table-striped" id="dynamic-table">
+              <thead>
+              <tr>
+                  <th>S.NO</th>
+                  <th>Facility Name</th>
+                  <th>Facility Manager</th>
+                  <th>Capacity</th>
+                  <th>Cost</th>
+                  <th>Add/View Courts</th>
+                  <th>Edit/Delete Facility</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                  <td>1</td>
+                  <td>School 1</td>
+                  <td>David</td>
+                  <td>100</td>
+                  <td>100</td>
+                  <td>
+                    <a class="btn btn-success" href="#courtsDiv">Add Courts</a>
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#courtStatusModal">View Court Status</button>
+                  </td>
+                  <td>
+                    <button class="btn btn-warning">Edit Facility</button>
+                    <button class="btn btn-danger">Delete Facility</button>
+                  </td>
+              </tr>
+              <tr>
+                  <td>1</td>
+                  <td>School 1</td>
+                  <td>David</td>
+                  <td>100</td>
+                  <td>100</td>
+                  <td>
+                    <a class="btn btn-success" href="#courtsDiv">Add Courts</a>
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#courtStatusModal">View Court Status</button>
+                  </td>
+                  <td>
+                    <button class="btn btn-warning">Edit Facility</button>
+                    <button class="btn btn-danger">Delete Facility</button>
+                  </td>
+              </tr>
+              <tr>
+                  <td>1</td>
+                  <td>School 1</td>
+                  <td>David</td>
+                  <td>100</td>
+                  <td>100</td>
+                  <td>
+                    <a class="btn btn-success" href="#courtsDiv">Add Courts</a>
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#courtStatusModal">View Court Status</button>
+                  </td>
+                  <td>
+                    <button class="btn btn-warning">Edit Facility</button>
+                    <button class="btn btn-danger">Delete Facility</button>
+                  </td>
+              </tr>
+              <tr>
+                  <td>1</td>
+                  <td>School 1</td>
+                  <td>David</td>
+                  <td>100</td>
+                  <td>100</td>
+                  <td>
+                    <a class="btn btn-success" href="#courtsDiv">Add Courts</a>
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#courtStatusModal">View Court Status</button>
+                  </td>
+                  <td>
+                    <button class="btn btn-warning">Edit Facility</button>
+                    <button class="btn btn-danger">Delete Facility</button>
+                  </td>
+              </tr>
+              <tr>
+                  <td>1</td>
+                  <td>School 1</td>
+                  <td>David</td>
+                  <td>100</td>
+                  <td>100</td>
+                  <td>
+                    <a class="btn btn-success" href="#courtsDiv">Add Courts</a>
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#courtStatusModal">View Court Status</button>
+                  </td>
+                  <td>
+                    <button class="btn btn-warning">Edit Facility</button>
+                    <button class="btn btn-danger">Delete Facility</button>
+                  </td>
+              </tr>
+              <tr>
+                  <td>1</td>
+                  <td>School 1</td>
+                  <td>David</td>
+                  <td>100</td>
+                  <td>100</td>
+                  <td>
+                    <a class="btn btn-success" href="#courtsDiv">Add Courts</a>
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#courtStatusModal">View Court Status</button>
+                  </td>
+                  <td>
+                    <button class="btn btn-warning">Edit Facility</button>
+                    <button class="btn btn-danger">Delete Facility</button>
+                  </td>
+              </tr>
+              <tr>
+                  <td>1</td>
+                  <td>School 1</td>
+                  <td>David</td>
+                  <td>100</td>
+                  <td>100</td>
+                  <td>
+                    <a class="btn btn-success" href="#courtsDiv">Add Courts</a>
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#courtStatusModal">View Court Status</button>
+                  </td>
+                  <td>
+                    <button class="btn btn-warning">Edit Facility</button>
+                    <button class="btn btn-danger">Delete Facility</button>
+                  </td>
+              </tr>
+              <tr>
+                  <td>1</td>
+                  <td>School 1</td>
+                  <td>David</td>
+                  <td>100</td>
+                  <td>100</td>
+                  <td>
+                    <a class="btn btn-success" href="#courtsDiv">Add Courts</a>
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#courtStatusModal">View Court Status</button>
+                  </td>
+                  <td>
+                    <button class="btn btn-warning">Edit Facility</button>
+                    <button class="btn btn-danger">Delete Facility</button>
+                  </td>
+              </tr>
+              <tr>
+                  <td>1</td>
+                  <td>School 1</td>
+                  <td>David</td>
+                  <td>100</td>
+                  <td>100</td>
+                  <td>
+                    <a class="btn btn-success" href="#courtsDiv">Add Courts</a>
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#courtStatusModal">View Court Status</button>
+                  </td>
+                  <td>
+                    <button class="btn btn-warning">Edit Facility</button>
+                    <button class="btn btn-danger">Delete Facility</button>
+                  </td>
+              </tr>
+              <tr>
+                  <td>1</td>
+                  <td>School 1</td>
+                  <td>David</td>
+                  <td>100</td>
+                  <td>100</td>
+                  <td>
+                    <a class="btn btn-success" href="#courtsDiv">Add Courts</a>
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#courtStatusModal">View Court Status</button>
+                  </td>
+                  <td>
+                    <button class="btn btn-warning">Edit Facility</button>
+                    <button class="btn btn-danger">Delete Facility</button>
+                  </td>
+              </tr>
+              </tbody>
+              <tfoot>
+              <tr>
+                  <th>S.NO</th>
+                  <th>Facility Name</th>
+                  <th>Facility Manager</th>
+                  <th>Capacity</th>
+                  <th>Cost</th>
+                  <th>Add/View Courts</th>
+                  <th>Edit/Delete Facility</th>
+              </tr>
+              </tfoot>
+              </table>
+              </div>
+              </div>
+            </section>
+          </div>
+        </div>
+   
+        <!-- page end-->
+        <!-- Create/Edit Facility Start-->
+        <div class="row" id="facilityDiv">
             <div class="col-sm-12">
               <section class="panel">
               <header class="panel-heading font-white blue-bg text-center">
@@ -119,12 +338,7 @@
                         <label class="col-sm-2 col-sm-2 control-label">State</label>
                         <div class="col-sm-10">
                           <select class="form-control m-bot15">
-                            <option>Baseball</option>
-                            <option>Softball</option>
-                            <option>Football</option>
-                            <option>Volleyball</option>
-                            <option>Soccer</option>
-                            <option>Basketball</option>
+                            
                           </select>
                         </div>
                       </div>
@@ -173,15 +387,131 @@
               </div>
               </section>
             </div>
-          </div>
+        </div>
           
-          <!-- Create/Edit Facility Ends--> 
+        <!-- Create/Edit Facility Ends--> 
+
+        <!--Available Courts Table-->
+          <div class="row" id="availableCourtDiv">
+                <div class="col-sm-12">
+            <section class="panel">
+              <header class="panel-heading red-bg font-white text-center">
+                  List of Available Courts
+             <span class="tools pull-right">
+              <a href="#courtsDiv" class="btn btn-primary font-white">Add Courts</a>
+              <a href="javascript:;" class="fa fa-chevron-down"></a>
+             </span>
+              </header>
+              <div class="panel-body">
+              <div class="adv-table">
+              <table  class="display table table-bordered table-striped" id="dynamic-table">
+              <thead>
+              <tr>
+                  <th>S.No</th>
+                  <th>Court/Field Name</th>
+                  <th>Associated Facility</th>
+                  <th>Sport</th>
+                  <th>Edit Court</th>
+                  <th>Delete Court</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                  <td>1</td>
+                  <td>Avengers Basketball Court</td>
+                  <td>DAV</td>
+                  <td>Basketball</td>
+                  <td>
+                    <button class="btn btn-warning">Edit Court</button>
+                  </td>
+                  <td>
+                    <button class="btn btn-danger">Delete Court</button>
+                  </td>
+              </tr>
+              <tr>
+                  <td>1</td>
+                  <td>Avengers Basketball Court</td>
+                  <td>DAV</td>
+                  <td>Basketball</td>
+                  <td>
+                    <button class="btn btn-warning">Edit Court</button>
+                  </td>
+                  <td>
+                    <button class="btn btn-danger">Delete Court</button>
+                  </td>
+              </tr>
+              <tr>
+                  <td>1</td>
+                  <td>Avengers Basketball Court</td>
+                  <td>DAV</td>
+                  <td>Basketball</td>
+                  <td>
+                    <button class="btn btn-warning">Edit Court</button>
+                  </td>
+                  <td>
+                    <button class="btn btn-danger">Delete Court</button>
+                  </td>
+              </tr>
+              <tr>
+                  <td>1</td>
+                  <td>Avengers Basketball Court</td>
+                  <td>DAV</td>
+                  <td>Basketball</td>
+                  <td>
+                    <button class="btn btn-warning">Edit Court</button>
+                  </td>
+                  <td>
+                    <button class="btn btn-danger">Delete Court</button>
+                  </td>
+              </tr>
+              <tr>
+                  <td>1</td>
+                  <td>Avengers Basketball Court</td>
+                  <td>DAV</td>
+                  <td>Basketball</td>
+                  <td>
+                    <button class="btn btn-warning">Edit Court</button>
+                  </td>
+                  <td>
+                    <button class="btn btn-danger">Delete Court</button>
+                  </td>
+              </tr>
+              <tr>
+                  <td>1</td>
+                  <td>Avengers Basketball Court</td>
+                  <td>DAV</td>
+                  <td>Basketball</td>
+                  <td>
+                    <button class="btn btn-warning">Edit Court</button>
+                  </td>
+                  <td>
+                    <button class="btn btn-danger">Delete Court</button>
+                  </td>
+              </tr>
+              </tbody>
+              <tfoot>
+              <tr>
+                  <th>S.No</th>
+                  <th>Court/Field Name</th>
+                  <th>Associated Facility</th>
+                  <th>Sport</th>
+                  <th>Edit Court</th>
+                  <th>Delete Court</th>
+              </tr>
+              </tfoot>
+              </table>
+              </div>
+              </div>
+            </section>
+          </div>
+        </div>
+
           <!--Create/Edit Court Start-->
-            <div class="row">
+            <div class="row" id="courtsDiv">
             <div class="col-sm-12">
               <section class="panel">
               <header class="panel-heading font-white blue-bg text-center">
-                  Create/Edit Facility
+                  Create/Edit Court(s)
              <span class="tools pull-right">
                 <a href="javascript:;" class="fa fa-chevron-down"></a>
              </span>
@@ -189,25 +519,19 @@
               <div class="panel-body" style="background-color:rgb(250, 250, 255);">
                   <form class="form-horizontal tasi-form">
                       <div class="form-group">
-                        <label class="col-sm-2 col-sm-2 control-label">Facility Name</label>
+                        <label class="col-sm-2 col-sm-2 control-label">Court/Field Name</label>
                         <div class="col-sm-10">
-                          <input type="text" class="form-control" maxlength="20" placeholder="Name of Facility">
+                          <input type="text" class="form-control" maxlength="20" placeholder="Name of Court/Field">
                         </div>
                       </div>
                        <div class="form-group">
-                        <label class="col-sm-2 col-sm-2 control-label">Address</label>
+                        <label class="col-sm-2 col-sm-2 control-label">Short Code</label>
                         <div class="col-sm-10">
-                          <input type="text" class="form-control" maxlength="20" placeholder="Address of Facility">
+                          <input type="text" class="form-control" maxlength="20" placeholder="Short Code of Facility">
                         </div>
                       </div>
                       <div class="form-group">
-                        <label class="col-sm-2 col-sm-2 control-label">City</label>
-                        <div class="col-sm-10">
-                          <input type="text" class="form-control" maxlength="20" placeholder="City of Facility">
-                        </div>
-                      </div>
-                       <div class="form-group">
-                        <label class="col-sm-2 col-sm-2 control-label">State</label>
+                        <label class="col-sm-2 col-sm-2 control-label">Sport</label>
                         <div class="col-sm-10">
                           <select class="form-control m-bot15">
                             <option>Baseball</option>
@@ -219,40 +543,10 @@
                           </select>
                         </div>
                       </div>
-                      <div class="form-group">
-                        <label class="col-sm-2 col-sm-2 control-label">ZIP</label>
-                        <div class="col-sm-10">
-                          <input type="text" class="form-control" maxlength="20" placeholder="ZIP Code of Facility">
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <label class="col-sm-2 col-sm-2 control-label">Facility Manager</label>
-                        <div class="col-sm-10">
-                          <input type="text" class="form-control" maxlength="20" placeholder="Name of Facility Manager">
-                        </div>
-                      </div>
                        <div class="form-group">
-                        <label class="col-sm-2 col-sm-2 control-label">Phone</label>
+                        <label class="col-sm-2 col-sm-2 control-label">Note</label>
                         <div class="col-sm-10">
-                          <input type="text" class="form-control" maxlength="20" placeholder="Phone number of Facility Manager">
-                        </div>
-                      </div>
-                       <div class="form-group">
-                        <label class="col-sm-2 col-sm-2 control-label">Email</label>
-                        <div class="col-sm-10">
-                          <input type="text" class="form-control" maxlength="20" placeholder="Email of Facility Manager">
-                        </div>
-                      </div>
-                       <div class="form-group">
-                        <label class="col-sm-2 col-sm-2 control-label">Capacity</label>
-                        <div class="col-sm-10">
-                          <input type="text" class="form-control" maxlength="20" placeholder="Capacity of Facility">
-                        </div>
-                      </div>
-                       <div class="form-group">
-                        <label class="col-sm-2 col-sm-2 control-label">Cost</label>
-                        <div class="col-sm-10">
-                          <input type="text" class="form-control" maxlength="20" placeholder="Cost of Facility">
+                          <input type="text" class="form-control" maxlength="20" placeholder="General Notes">
                         </div>
                       </div>
                       <div class="form-group">
@@ -292,9 +586,7 @@
     <script src="js/jquery.nicescroll.js" type="text/javascript"></script>
     <script src="js/respond.min.js" ></script>
     <script type="text/javascript" language="javascript" src="assets/advanced-datatable/media/js/jquery.dataTables.js"></script>
-    <script type="text/javascript" src="assets/bootstrap-wysihtml5/wysihtml5-0.3.0.js"></script>
-    <script type="text/javascript" src="assets/bootstrap-wysihtml5/bootstrap-wysihtml5.js"></script>
-    <script type="text/javascript" src="assets/bootstrap-fileupload/bootstrap-fileupload.js"></script>
+    <script type="text/javascript" src="assets/data-tables/DT_bootstrap.js"></script>
 
     <!--right slidebar-->
     <script src="js/slidebars.min.js"></script>
@@ -305,9 +597,5 @@
     <!--common script for all pages-->
     <script src="js/common-scripts.js"></script>
 
-    <!--this page  script only-->
-    <script src="js/create-tournament.js"></script>
-   
-    
   </body>
 </html>

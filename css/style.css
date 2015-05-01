@@ -1,8 +1,8 @@
 /*
-Template Name: Flat Lab Dashboard build with Bootstrap v3.2.0
+Template Name: 805Stats EventsPro build with Bootstrap v3.2.0
 Template Version: 2.0
-Author: Mosaddek Hossain
-Website: http://thevectorlab.net/
+Author: Arpit Soni
+Website: http://htmlexperts.co.in/
 */
 
 /* Import fonts */
@@ -4350,7 +4350,7 @@ tr.odd.gradeX td.sorting_1, tr.even.gradeX td.sorting_1, table.display tr.even.g
 }
 
 .horizontal-menu {
-    margin-left: 50px;
+    /*margin-left: 50px;*/
     float: left;
 }
 

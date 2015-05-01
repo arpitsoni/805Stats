@@ -17,6 +17,11 @@
     <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="assets/bootstrap-wysihtml5/bootstrap-wysihtml5.css" />
     <link rel="stylesheet" type="text/css" href="assets/bootstrap-fileupload/bootstrap-fileupload.css" />
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap-colorpicker/css/colorpicker.css" />
+     <!--dynamic table-->
+    <link href="assets/advanced-datatable/media/css/demo_page.css" rel="stylesheet" />
+    <link href="assets/advanced-datatable/media/css/demo_table.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/data-tables/DT_bootstrap.css" />
     
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
@@ -45,10 +50,10 @@
               <div class="horizontal-menu navbar-collapse collapse ">
                   <ul class="nav navbar-nav">
                       <li><a href="home.html">Home</a></li>
-                      <li class="active"><a href="tournament.html">Tournament Setup</a></li>
-                      <li><a href="facility_manager.html">Facility Manager</a></li>
-                      <li><a href="facility_manager.html">Division Manager</a></li>
-                      <li><a href="facility_manager.html">Team Manager</a></li>
+                      <li><a href="tournament.html">Tournament Setup</a></li>
+                      <li><a href="facility.html">Facility Manager</a></li>
+                      <li class="active"><a href="division.html">Division Manager</a></li>
+                      <li><a href="team.html">Team Manager</a></li>
                       <li><a href="schedule.html">Schedule Games</a></li>
                       <li><a href="report.html">Reports</a></li>
                       <li><a href="support.html">Support</a></li>
@@ -86,12 +91,166 @@
       <section id="main-content">
         <section class="wrapper">
            <!-- page start-->
+
+          <!--Division Table Starts--> 
+          <!--Available Courts Table-->
+          <div class="row" id="availableCourtDiv">
+            <div class="col-sm-12">
+            <section class="panel">
+              <header class="panel-heading red-bg font-white text-center">
+                  List of Available Divisions
+             <span class="tools pull-right">
+              <a href="#courtsDiv" class="btn btn-primary font-white">Add Courts</a>
+              <a href="javascript:;" class="fa fa-chevron-down"></a>
+             </span>
+              </header>
+              <div class="panel-body">
+              <div class="adv-table">
+              <table  class="display table table-bordered table-striped" id="dynamic-table">
+              <thead>
+              <tr>
+                  <th>S.No</th>
+                  <th>Division Name</th>
+                  <th>Associated Facility</th>
+                  <th>Teams in Division</th>
+                  <th>Edit Division</th>
+                  <th>Delete Division</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                  <td>1</td>
+                  <td>8th Boys Division</td>
+                  <td>School 1</td>
+                  <td>Basketball</td>
+                  <td>
+                    <button class="btn btn-warning">Edit Division</button>
+                  </td>
+                  <td>
+                    <button class="btn btn-danger">Delete Division</button>
+                  </td>
+              </tr>
+               <tr>
+                  <td>1</td>
+                  <td>8th Boys Division</td>
+                  <td>School 1</td>
+                  <td>Basketball</td>
+                  <td>
+                    <button class="btn btn-warning">Edit Division</button>
+                  </td>
+                  <td>
+                    <button class="btn btn-danger">Delete Division</button>
+                  </td>
+              </tr>
+               <tr>
+                  <td>1</td>
+                  <td>8th Boys Division</td>
+                  <td>School 1</td>
+                  <td>Basketball</td>
+                  <td>
+                    <button class="btn btn-warning">Edit Division</button>
+                  </td>
+                  <td>
+                    <button class="btn btn-danger">Delete Division</button>
+                  </td>
+              </tr>
+               <tr>
+                  <td>1</td>
+                  <td>8th Boys Division</td>
+                  <td>School 1</td>
+                  <td>Basketball</td>
+                  <td>
+                    <button class="btn btn-warning">Edit Division</button>
+                  </td>
+                  <td>
+                    <button class="btn btn-danger">Delete Division</button>
+                  </td>
+              </tr>
+               <tr>
+                  <td>1</td>
+                  <td>8th Boys Division</td>
+                  <td>School 1</td>
+                  <td>Basketball</td>
+                  <td>
+                    <button class="btn btn-warning">Edit Division</button>
+                  </td>
+                  <td>
+                    <button class="btn btn-danger">Delete Division</button>
+                  </td>
+              </tr>
+               <tr>
+                  <td>1</td>
+                  <td>8th Boys Division</td>
+                  <td>School 1</td>
+                  <td>Basketball</td>
+                  <td>
+                    <button class="btn btn-warning">Edit Division</button>
+                  </td>
+                  <td>
+                    <button class="btn btn-danger">Delete Division</button>
+                  </td>
+              </tr>
+               <tr>
+                  <td>1</td>
+                  <td>8th Boys Division</td>
+                  <td>School 1</td>
+                  <td>Basketball</td>
+                  <td>
+                    <button class="btn btn-warning">Edit Division</button>
+                  </td>
+                  <td>
+                    <button class="btn btn-danger">Delete Division</button>
+                  </td>
+              </tr>
+               <tr>
+                  <td>1</td>
+                  <td>8th Boys Division</td>
+                  <td>School 1</td>
+                  <td>Basketball</td>
+                  <td>
+                    <button class="btn btn-warning">Edit Division</button>
+                  </td>
+                  <td>
+                    <button class="btn btn-danger">Delete Division</button>
+                  </td>
+              </tr>
+               <tr>
+                  <td>1</td>
+                  <td>8th Boys Division</td>
+                  <td>School 1</td>
+                  <td>Basketball</td>
+                  <td>
+                    <button class="btn btn-warning">Edit Division</button>
+                  </td>
+                  <td>
+                    <button class="btn btn-danger">Delete Division</button>
+                  </td>
+              </tr>
+              </tbody>
+              <tfoot>
+              <tr>
+                  <th>S.No</th>
+                  <th>Court/Field Name</th>
+                  <th>Associated Facility</th>
+                  <th>Sport</th>
+                  <th>Edit Court</th>
+                  <th>Delete Court</th>
+              </tr>
+              </tfoot>
+              </table>
+              </div>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <!--Division Table section ends-->
               
           <div class="row">
             <div class="col-sm-12">
               <section class="panel">
               <header class="panel-heading font-white blue-bg text-center">
-                  Create Tournament
+                  Create/Edit Divisions
              <span class="tools pull-right">
                 <a href="javascript:;" class="fa fa-chevron-down"></a>
              </span>
@@ -99,204 +258,108 @@
               <div class="panel-body" style="background-color:rgb(250, 250, 255);">
                   <form class="form-horizontal tasi-form">
                       <div class="form-group">
-                        <label class="col-sm-2 col-sm-2 control-label">Tournament Name</label>
+                        <label class="col-sm-2 col-sm-2 control-label">Division Name</label>
                         <div class="col-sm-10">
-                          <input type="text" class="form-control" maxlength="20" placeholder="Name of Tournament">
+                          <input type="text" class="form-control" maxlength="20" placeholder="Name of Division">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="col-sm-2 col-sm-2 control-label">Division ABBR.</label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" maxlength="20" placeholder="Abbrevation of Division">
                         </div>
                       </div>
                        <div class="form-group">
-                        <label class="col-sm-2 col-sm-2 control-label">Tournament Logo</label>
-                        <div class="controls col-sm-10">
-                          <div class="fileupload fileupload-new" data-provides="fileupload">
-                            <span class="btn btn-file btn-primary">
-                            <span class="fileupload-new"><i class="fa fa-paper-clip"></i> Select file</span>
-                            <span class="fileupload-exists"><i class="fa fa-undo"></i> Change</span>
-                            <input type="file" class="default" />
-                            </span>
-                              <span class="fileupload-preview" style="margin-left:5px;"></span>
-                              <a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none; margin-left:5px;"></a>
-                          </div>         
-                        </div>
-                      </div>
-                       <div class="form-group">
-                        <label class="col-sm-2 col-sm-2 control-label">Tournament Sport</label>
+                        <label class="col-sm-2 col-sm-2 control-label">Gender</label>
                         <div class="col-sm-10">
                           <select class="form-control m-bot15">
-                            <option>Baseball</option>
-                            <option>Softball</option>
-                            <option>Football</option>
-                            <option>Volleyball</option>
-                            <option>Soccer</option>
-                            <option>Basketball</option>
+                            <option>Male</option>
+                            <option>Female</option>
                           </select>
                         </div>
                       </div>
                       <div class="form-group">
-                        <label class="col-sm-2 col-sm-2 control-label">Tournament Format</label>
+                        <label class="control-label col-sm-2">Choose color</label>
+                        <div class="col-sm-4 col-xs-11">
+                          <div data-color-format="rgb" data-color="rgb(255, 146, 180)" class="input-append colorpicker-default color">
+                              <input type="text" readonly="" value="" class="form-control">
+                              <span class=" input-group-btn add-on">
+                                  <button class="btn btn-white" type="button" style="padding: 8px">
+                                  <i style="background-color: rgb(60, 196, 123);"></i>
+                                  </button>
+                              </span>
+                          </div>
+                      </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="col-sm-2 col-sm-2 control-label">Tournament Type</label>
                         <div class="col-sm-10">
                           <select class="form-control m-bot15">
-                            <option>Open Registration</option>
-                            <option>Invite Only</option>
+                            <option>Random Brackets</option>
+                            <option>Seeded Brackets</option>
+                            <option>Pool Play</option>
+                            <option>Pool Play + Play Off</option>
+                            <option>Round Robin</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="col-sm-2 col-sm-2 control-label">Tournament Style</label>
+                        <div class="col-sm-10">
+                          <select class="form-control m-bot15">
+                            <option>3 Game Guarantee</option>
+                            <option>2 Game Guarantee</option>
+                            <option>Single Elimination</option>
+                            <option>Double Elimination</option>
                           </select>
                         </div>
                       </div>
                        <div class="form-group">
-                        <label class="col-sm-2 col-sm-2 control-label">Date(s) for Tournament</label>
+                        <label class="col-sm-2 col-sm-2 control-label">Pool Play Type</label>
                         <div class="col-sm-10">
-                          <input type="date" class="form-control" maxlength="20" placeholder="Name of Tournament">
+                          <select class="form-control m-bot15">
+                            <option>Please elaborate about this</option>
+                          </select>
                         </div>
                       </div>
                        <div class="form-group">
-                        <label class="col-sm-2 col-sm-2 control-label">Timezone</label>
+                        <label class="col-sm-2 col-sm-2 control-label">Number of Teams in Division</label>
+                        <div class="col-sm-10">
+                          <input type="input" class="form-control" maxlength="20" placeholder="No. of Team in Division">
+                        </div>
+                      </div>
+                       <div class="form-group">
+                        <label class="col-sm-2 col-sm-2 control-label">Number of Pools(Teams per pool)</label>
                        <div class="col-sm-10">
                           <select class="form-control m-bot15" id="timezone">
-                            <option value="">---select Timezone---</option>
-                            <option data-offset="-09:00" value="Alaska">(GMT -09:00) Alaska</option>
-                            <option data-offset="-08:00" value="Pacific">(GMT -08:00) Pacific</option>
-                            <option data-offset="-07:00" value="Mountain">(GMT -07:00) Mountain</option>
-                            <option data-offset="-06:00" value="Central">(GMT -06:00) Central</option>
-                            <option data-offset="-05:00" value="Eastern">(GMT -05:00) Eastern</option>
+                            <option value="">1</option>
+                            <option value="">1</option>
                           </select>
                         </div>
                       </div>
-                       <div class="form-group">
-                        <label class="col-sm-2 col-sm-2 control-label">Schedule Increment</label>
-                        <div class="col-sm-10">
-                          <select class="form-control m-bot15">
-                            <option value="">---select schedule increment---</option>
-                            <option value="30 minutes">30 minutes</option>
-                            <option value="1 Hour">1 Hour</option>
-                            <option value="1 Hour 30 minutes">1 Hour 30 minutes</option>
-                            <option value="2 hours">2 hours</option>
-                            <option value="2 hours 30 minutes">2 hours 30 minutes</option>
-                            <option value="3 hours">3 hours</option>
-                            <option value="3 hours 30 minutes">3 hours 30 minutes</option>
-                            <option value="4 hours">4 hours</option>
-                            <option value="4 hours 30 minutes">4 hours 30 minutes</option>
-                            <option value="5 hours">5 hours</option>
-                          </select>
-                        </div>
-                      </div>
-                       <div class="form-group">
-                        <label class="col-sm-2 col-sm-2 control-label">Tournament Notes</label>
+                      <div class="form-group">
+                        <label class="col-sm-2 col-sm-2 control-label">Division Notes</label>
                         <div class="col-sm-10">
                           <textarea class="wysihtml5 form-control" rows="10"></textarea>
                         </div>
                       </div>
-                      <div class="form-group">
-                        <label class="col-sm-2 col-sm-2 control-label">Allow Ties?</label>
+                       <div class="form-group">
+                        <label class="col-sm-2 col-sm-2 control-label">Choose Facility</label>
                         <div class="col-sm-10">
-                          <div class="radio">
-                            <label class="checkbox-inline">
-                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
-                                Yes
-                            </label>
-                            <label class="checkbox-inline">
-                                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option1" checked="">
-                                No
-                            </label>
-                          </div>
+                          <select class="form-control m-bot15">
+                            <option value="">---Choose Facility---</option>
+                          </select>
                         </div>
                       </div>
-                       
                   </form>
               </div>
               </section>
             </div>
           </div>
 
-          <!--Registration Form-->
-          <div class="row">
-            <div class="col-sm-12">
-              <section class="panel">
-              <header class="panel-heading font-white red-bg text-center">
-                  Setup Registration for the Tournament
-             <span class="tools pull-right">
-                <a href="javascript:;" class="fa fa-chevron-down"></a>
-             </span>
-              </header>
-              <div class="panel-body" style="background-color:rgb(252, 251, 251);">
-                  <form class="form-horizontal tasi-form">
-                      <div class="form-group">
-                        <label class="col-sm-2 col-sm-2 control-label">Entry Fees($)</label>
-                        <div class="col-sm-10">
-                          <input type="number" class="form-control" maxlength="5" placeholder="Entry fees in $">
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <label class="col-sm-2 col-sm-2 control-label">Early Bird Registration Fees($)</label>
-                         <div class="col-sm-10">
-                          <input type="number" class="form-control" maxlength="5" placeholder="Early Bird Registration fees in $">
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <label class="col-sm-2 col-sm-2 control-label">Cutoff Date</label>
-                        <div class="col-sm-10">
-                         <input type="date" class="form-control" maxlength="5" >
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <label class="col-sm-2 col-sm-2 control-label">Online Registration Starts</label>
-                        <div class="col-sm-10">
-                          <input type="date" class="form-control" maxlength="20">
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <label class="col-sm-2 col-sm-2 control-label">Online Registration Ends</label>
-                       <div class="col-sm-10">
-                         <input type="date" class="form-control" maxlength="20">
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <label class="col-sm-2 col-sm-2 control-label">Max Teams Per Division</label>
-                        <div class="col-sm-10">
-                         <input type="number" class="form-control" maxlength="20" placeholder="Maximum number of teams in a Division">
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <label class="col-sm-2 col-sm-2 control-label">Min Players on Roaster</label>
-                        <div class="col-sm-10">
-                          <input type="number" class="form-control" maxlength="20" placeholder="Minimum number of players on a roaster">
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <label class="col-sm-2 col-sm-2 control-label">Birth Date Required?</label>
-                        <div class="col-sm-10">
-                          <div class="radio">
-                            <label class="checkbox-inline">
-                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
-                                Yes
-                            </label>
-                            <label class="checkbox-inline">
-                                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option1" checked="">
-                                No
-                            </label>
-                          </div>
-                        </div>
-                      </div>
-                       <div class="form-group">
-                        <label class="col-sm-2 col-sm-2 control-label">Disclaimer</label>
-                        <div class="col-sm-10">
-                          <textarea class="wysihtml5 form-control" rows="10"></textarea>
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <label class="col-sm-2 col-sm-2 control-label">Registration Information</label>
-                        <div class="col-sm-10">
-                          <textarea class="wysihtml5 form-control" rows="10"></textarea>
-                        </div>
-                      </div>
-                      
-                  </form>
-              </div>
-              </section>
-              </div>
-              </div>
-              <!-- page end-->
-          
           <div class="row">
             <div class="col-md-12">
-              <button class="btn btn-primary center-block">Save Tournament</button>
+              <button class="btn btn-primary center-block">Save Division</button>
             </div>
           </div>    
           <!-- page end-->
@@ -327,6 +390,7 @@
     <script type="text/javascript" src="assets/bootstrap-wysihtml5/wysihtml5-0.3.0.js"></script>
     <script type="text/javascript" src="assets/bootstrap-wysihtml5/bootstrap-wysihtml5.js"></script>
     <script type="text/javascript" src="assets/bootstrap-fileupload/bootstrap-fileupload.js"></script>
+    <script type="text/javascript" src="assets/bootstrap-colorpicker/js/bootstrap-colorpicker.js"></script>
 
     <!--right slidebar-->
     <script src="js/slidebars.min.js"></script>
@@ -338,7 +402,7 @@
     <script src="js/common-scripts.js"></script>
 
     <!--this page  script only-->
-    <script src="js/create-tournament.js"></script>
+    <script src="js/division.js"></script>
    
     
   </body>
